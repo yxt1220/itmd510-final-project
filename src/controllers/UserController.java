@@ -25,7 +25,7 @@ public class UserController {
             } else {
                 type = "DEPOSIT";
             }
-
+         // Negative amount represents a withdrawal transaction
             TransactionDAO.addTransaction(1, value, type);
 
             message.setText("Transaction added: " + type);
